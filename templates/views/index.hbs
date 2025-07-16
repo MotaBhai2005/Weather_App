@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    {{header}}
+
+    <h1>🌤 Weather App</h1>
+    <p>Type a city name below to get the current weather!</p>
+
+    <form id="weather-form">
+        <input type="text" id="address" placeholder="Enter city name" autofocus>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <p id="loading" style="display:none;">Loading...</p>
+    <div id="result"></div>
+
+    {{> footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
